@@ -15,7 +15,7 @@ build:
 .PHONY: compile
 compile:
 	@echo 'compiling script...'
-	docker run -it --rm -v "$(current_dir)":/go/src/app -e GOARM=6 -e GOARCH=arm -e GOOS=linux gpio-http go build gpio-http.go
+	docker run --rm -v "$(current_dir)":/go/src/app -e GOARM=6 -e GOARCH=arm -e GOOS=linux gpio-http go build gpio-http.go
 
 .PHONY: install
 install:
