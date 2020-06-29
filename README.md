@@ -1,4 +1,4 @@
-## Build, Compile, Install & Run
+## Build and compile for deployment/ci
 
 `make`
 
